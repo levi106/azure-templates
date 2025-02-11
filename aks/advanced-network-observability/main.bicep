@@ -1,9 +1,9 @@
 param location string = resourceGroup().location
 param clusterName string = 'aks-${substring(uniqueString(resourceGroup().id),1,4)}'
-param kubernetesVersion string = '1.30.3'
+param kubernetesVersion string = '1.31.1'
 param defaultPoolname string = 'agentpool'
 param nodeCount int = 2
-param nodeVmSize string = 'Standard_D4s_v3'
+param nodeVmSize string = 'Standard_D4s_v5'
 @allowed([
   'NodeImage'
   'None'
